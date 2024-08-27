@@ -11,7 +11,7 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 
 app = Flask(__name__, template_folder='templates')
-app.secret_key = 'this is a very secure string'
+app.secret_key = ''
 CORS(app)
 
 @app.route('/')
